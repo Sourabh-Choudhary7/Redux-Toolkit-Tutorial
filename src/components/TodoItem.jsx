@@ -11,9 +11,9 @@ function TodoItem({ id, text, isCompleted }) {
 
     return (
         <div className="todo-item">
-            <input type="checkbox" checked={isCompleted} />
+            <input type="checkbox" defaultChecked={isCompleted} />
             <p>{text}</p>
-            <button onClick={removeTodoItem}>X</button>
+            <button style={{backgroundColor:'transparent', border:'none'}} onClick={removeTodoItem}>X</button>
         </div>
     )
 }

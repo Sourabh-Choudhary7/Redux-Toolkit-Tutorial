@@ -10,6 +10,7 @@ function TodoInput() {
 
     function addTodoToStore() {
         dispatch(addTodo(todo));
+        setTodo('');
     }
 
     return (
